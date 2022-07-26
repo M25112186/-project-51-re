@@ -3,6 +3,11 @@ var clue, paper, treasurebox, opentreasurebox;
 var clueImg, paperImg, treasureBoxImg, opTreasureBoxImg;
 var leaf, paperball;
 var leafImg, paperballImg;
+var q1, q1Img;
+var q2, q2Img;
+var q3, q3Img;
+var q4, q4Img;
+var q5, q5Img;
 
 function preload() {
   clueImg = loadImage("images/cluepaper.png");
@@ -59,7 +64,10 @@ function draw() {
   }
 
   if (Clues.isTouching(treasurebox)) {
-    
+  q1.loadImage("q1.png");
+    q1.addImage(q1Img)
+    q1 = createSprite(45,100, 20, 30)
+    q1.scale=0.9
   }
   
   drawSprites();
